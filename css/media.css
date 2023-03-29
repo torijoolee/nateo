@@ -1,0 +1,228 @@
+@media (min-width: 960px) {
+  .pc-cover {
+    max-width: 1200px;
+    box-sizing: border-box;
+    margin: 0 auto;
+  }
+  .logo {
+    background-image: url(/nateolimg/toplogo.png);
+    background-position: 0;
+  }
+  .toggle {
+    display: none;
+  }
+  .nav {
+    /* background-color: #fff; */
+    justify-content: center;
+  }
+  .nav-pc {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin-left: auto;
+    width: 100%;
+    min-width: 800px;
+  }
+  .nav-pc a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    font-weight: lighter;
+    letter-spacing: 2.5px;
+  }
+
+  .nav-pc li a::after {
+    content: "";
+    display: inline-block;
+    height: 14px;
+    width: 1px;
+    background-color: var(--color-yellow);
+    position: relative;
+    top: 1px;
+    margin: 0 1.2em;
+  }
+  .card {
+    position: relative;
+  }
+  .control {
+    position: absolute;
+    top: 45%;
+    width: 100%;
+  }
+  .card-btn {
+    width: 50px;
+    height: 80px;
+    background-color: black;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .prev {
+    position: absolute;
+    left: 0;
+    background-image: url(/nateolimg/ar-left.png);
+  }
+  .next {
+    position: absolute;
+    right: 0;
+    background-image: url(/nateolimg/ar-right.png);
+  }
+
+  .toggle-pc {
+    background-image: url(/nateolimg/bar.png);
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-position: center;
+    color: transparent;
+    cursor: pointer;
+  }
+
+  .img-title {
+    font-size: 3.3rem;
+  }
+  .img-text {
+    font-size: 1.3rem;
+  }
+  .header .inner-text {
+    padding: 3rem;
+    padding-bottom: 4rem;
+    line-height: 320%;
+  }
+  /* disney, store*/
+  .disney,
+  .store {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .disney .cover,
+  .store .cover,
+  .magazine .cover {
+    width: 100%;
+    font-size: 2rem;
+  }
+  h2 {
+    margin-top: 4em;
+    letter-spacing: 8px;
+  }
+  .disney > .cover,
+  .store > .cover,
+  .magazine > .cover {
+    padding-left: 5px;
+    font-size: 2.5rem;
+  }
+  h2::before {
+    height: 28px;
+    top: 1px;
+  }
+  .disney-item,
+  .store-item {
+    width: calc(50% - 6px);
+  }
+
+  .card {
+    padding-left: 3px;
+    padding-right: 3px;
+  }
+  .disney-item:last-of-type,
+  .store-item:last-of-type {
+    width: 100%;
+  }
+
+  .disney .disney-item:not(:last-child) .img-title,
+  .store .store-item:not(:last-child) .img-title {
+    font-size: 2.5rem;
+    line-height: 70%;
+  }
+  .footer {
+    height: 420px;
+  }
+  .footer .menu {
+    display: flex;
+    padding-top: 3rem;
+    padding-bottom: 3.5rem;
+  }
+  .footer .menu li::after {
+    content: "";
+    display: inline-block;
+    width: 2.5px;
+    height: 20px;
+    background-color: #898989;
+    margin: 0 2rem;
+    opacity: 0.65;
+    position: relative;
+    top: 3px;
+  }
+  .footer .menu li:last-child::after {
+    content: none;
+  }
+  .footer.cover {
+    padding: 0;
+  }
+  /* pc toggle */
+  .darkbg {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 500;
+    width: 100%;
+    height: 100vh;
+  }
+
+  .pc-menu-list button {
+    all: unset;
+    position: absolute;
+    right: 0;
+    z-index: 3000;
+    top: 50px;
+    background-image: url(/nateolimg/ico-close.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    color: transparent;
+    width: 0;
+    height: 50px;
+    cursor: pointer;
+    opacity: 0;
+    transform: rotate("0deg");
+    transition: all 0.5s linear;
+  }
+
+  .pc-menu-list {
+    height: 100%;
+    background-color: #1b1b1b;
+    position: absolute;
+    right: 0;
+    z-index: 3000;
+    padding: 2.5rem;
+    padding-top: 9em;
+    width: 0;
+    opacity: 0;
+    pointer-events: fill;
+    transition: all 0.5s linear;
+  }
+  .pc-menu-list.active {
+    opacity: 1;
+    width: 480px;
+    position: fixed;
+    top: 0;
+  }
+  .pc-menu-list a {
+    text-decoration: none;
+    color: #d9dad9;
+    display: block;
+  }
+
+  .pc-menu-list a:hover {
+    color: var(--color-yellow);
+  }
+  .pc-menu-list li {
+    text-transform: uppercase;
+    font-weight: lighter;
+    font-size: 1.4rem;
+    margin-bottom: 2.4rem;
+    letter-spacing: 4px;
+  }
+}
