@@ -45,6 +45,9 @@
   .card {
     position: relative;
   }
+  .header .card {
+    overflow-x: hidden;
+  }
   .control {
     position: absolute;
     top: 45%;
@@ -53,10 +56,10 @@
   .card-btn {
     width: 50px;
     height: 80px;
-    background-color: black;
     background-position: center;
     background-repeat: no-repeat;
     cursor: pointer;
+    z-index: 100;
   }
   .prev {
     position: absolute;
@@ -89,7 +92,12 @@
     padding-bottom: 4rem;
     line-height: 320%;
   }
+  .header .img-wrapper {
+    display: flex;
+  }
+
   /* disney, store*/
+  .header,
   .disney,
   .store {
     display: flex;
