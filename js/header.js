@@ -26,12 +26,14 @@
         -current * images[0].offsetWidth
       }px)`;
       imgWrapper.style.transition = "0.5s";
+      barActive();
     } else {
       current = totalPage - 1;
       imgWrapper.style.transform = `translateX(${
         -current * images[0].offsetWidth
       }px)`;
       imgWrapper.style.transition = "0.5s";
+      barActive();
     }
   }
   prev.addEventListener("click", prevHandle);

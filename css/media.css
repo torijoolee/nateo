@@ -110,7 +110,10 @@
     padding-bottom: 4rem;
     line-height: 320%;
   }
-  .header .img-wrapper {
+  .img-wrapper .small {
+    display: none;
+  }
+  .img-wrapper .large {
     display: flex;
   }
 

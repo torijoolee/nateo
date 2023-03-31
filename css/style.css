@@ -115,6 +115,16 @@ img {
   margin-bottom: 50px;
   padding-top: 55px;
 }
+.header .img-wrapper {
+  display: flex;
+}
+.img-wrapper .small {
+  display: flex;
+}
+.img-wrapper .large {
+  display: none;
+}
+
 /* section */
 h2 {
   font-size: 1.3rem;
