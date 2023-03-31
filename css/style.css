@@ -28,6 +28,9 @@ img {
   right: 0;
   z-index: 100;
 }
+.pc-img {
+  display: none;
+}
 .logo {
   all: unset;
   background-image: url(/nateolimg/logo.png);

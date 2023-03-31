@@ -48,6 +48,24 @@
   .header .card {
     overflow-x: hidden;
   }
+  .header-current {
+    position: absolute;
+    bottom: 4%;
+    left: 45%;
+    z-index: 100;
+  }
+  .header-current span {
+    display: inline-block;
+    width: 5px;
+    height: 18px;
+    margin: 0.8rem;
+    background-color: #cacaca;
+    border-radius: 5px;
+  }
+  .header-current span.active {
+    background-color: var(--color-yellow);
+  }
+
   .control {
     position: absolute;
     top: 45%;
