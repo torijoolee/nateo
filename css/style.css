@@ -114,6 +114,7 @@ img {
 .header {
   margin-bottom: 50px;
   padding-top: 55px;
+  overflow-x: hidden;
 }
 .header .img-wrapper {
   display: flex;
