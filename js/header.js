@@ -1,6 +1,6 @@
 (() => {
   if (matchMedia("screen and (min-width: 960px)").matches) {
-    const images = document.querySelectorAll(".header .img");
+    const images = document.querySelectorAll(".header .img.large");
     const imgWrapper = document.querySelector(".img-wrapper");
     const prev = document.querySelector(".prev");
     const next = document.querySelector(".next");
@@ -62,7 +62,7 @@
     //current와 같은 테이터 인덱스의 바 액티브
     function barActive() {
       for (let j = 0; j < totalPage; j++) {
-        barElems[j].dataset.index = i;
+        barElems[j].dataset.index = j;
         barElems.forEach((bar) => {
           if (bar.dataset.index == current) {
             bar.classList.add("active");
