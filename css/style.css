@@ -118,6 +118,7 @@ img {
 }
 .header .img-wrapper {
   display: flex;
+  width: 400vw;
 }
 .img-wrapper .small {
   display: flex;
